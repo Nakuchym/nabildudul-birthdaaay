@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lexend:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+body, html {
+  overflow-x: hidden; 
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+html{
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  color-scheme: light dark;
+  color: #5977be;
+  background-color: #cfdefd;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4959a7;
+  margin-bottom: 20px;
+}
+
+.title{
+  font-size: 1.5rem;
+}
+
+.btn {
+  margin: 20px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #5977be;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.btn:hover {
+  background-color: #45659b;
+}
+
+@keyframes floatAnimation {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating-img {
+  width: 200px; 
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.paper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px; 
+  height: 500px; 
+  margin-top: 30px;
+  background-image: url("/img/paper.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  overflow-y: auto; 
+  overflow: hidden;
+}
+
+.letter {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-size: 1.25rem;
+  font-style: normal;
+  text-align: justify; 
+  overflow-wrap: break-word;
+  padding: 50px;
+  padding-right: 60px;
+  color: rgb(113, 98, 73);
+}
+
+.letter p {
+  margin: 6px 0;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  .text{
+    font-size: 2rem;
+  }
+
+  .paper {
+      width: 300px; 
+      height: 400px; 
+  }
+
+  .letter{
+    font-size: 1rem;
+    padding: 30px;
+  }
+}
+
+.img-btn{
+  display: flex;
+  justify-content: center; 
+  gap: 75px;
+}
+
+.img-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.img-small {
+  width: 80px; 
+  height: auto;
+}
+
+.btn-text {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333; 
+
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #5979be;
+}
+
+.img-button:hover {
+  transform: translateY(-5px) scale(1.1); 
+}
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  position: relative;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup-image {
+  width: 400px;
+  max-width: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #597bbe;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #45589b;
+}
+
+@media (max-width: 768px) {
+  .img-small {
+    width: 60px;
+  }
+
+  .popup-content {
+    width: 90%;
+  }
+}
+
+.music-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  font-family: inherit; /* Inherits your cool pixel/custom font if applicable */
+  background-color: #3b82f6; /* Adjust color to match your design */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10; /* Ensures it stays on top of other elements */
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.music-btn:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.bg-item {
+  position: absolute;
+  width: 55px;
+  opacity: 0.2;
+
+  animation:
+    driftDown 18s linear infinite,
+    wiggle 0.8s ease-in-out infinite;
+}
+
+@keyframes driftDown {
+  from {
+    transform: translateY(-80px);
+  }
+
+  to {
+    transform: translateY(80px);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    rotate: -30deg;
+  }
+
+  50% {
+    rotate: 30deg;
+  }
+
+  100% {
+    rotate: -30deg;
+  }
+}
