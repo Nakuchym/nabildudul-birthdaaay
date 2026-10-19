@@ -12,7 +12,7 @@ function Home() {
         <div className="text">
           <Typewriter
             options={{
-              strings: ["SELAAAAMAATT ULTAAAAHH KHUSUS ANDI MUH. NABIL ADEELAARDDD!!! :DD"],
+              strings: ["WOII MET HBD GADIZA ZULFIYANA SAFITRI, S.H."],
               autoStart: true,
               loop: true,
               delay: 100,
@@ -23,7 +23,7 @@ function Home() {
       </div>
       
       <button className="btn" onClick={() => navigate("/letter")}>
-        oke makasih orang baik orang imut orang hebat
+        oke makasih orang baik orang hebat
       </button>
     </div>
   );

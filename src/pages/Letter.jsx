@@ -11,14 +11,14 @@ function Letter() {
             <div className="title">
                 <Typewriter
                     options={{
-                        strings: ["dibukaaa yaa duullll"],
+                        strings: ["DIBUKA YH"],
                         autoStart: true,
                         loop: true,
                         delay: 100,
                         deleteSpeed: 50
                     }}/>
             </div>
-            <img className="floating-img" src="/img/dudul.webp" alt="letter"/>
+            <img className="floating-img" src="/img/cacaca.jpeg" alt="letter"/>
             <div>
                 <button className="btn" onClick={() => navigate("/")}>
                     balik

@@ -18,49 +18,46 @@ function TheBirthdayLetter() {
             <div className="paper">
                 <div className="letter">
                     <p>
-                        HAAPPYYBIRTHDAAYYY dudulmagnuscarlsen aliaas????? yang ke 18!!!</p>
+                        WOI met ultah gadizazulfiyanassafitrihukumugm26 </p>
                     <p>
-                        semoga jadi orang yang BAIK (lu jahat), panjang umur, sehat selalu, dimudahkan 
-                        rezekinya,dan cita-citanya tercapaaaai!!! (jadi bupati di umur 55 taun dan 
-                        buka praktik di pulau panjang jir)
+                       yang ke 19 tahun ANJIRRR umur ngeri cooo... SINGKAT AJA semoga semua yang 
+                       kau doain tuh terkabul dan semogaaa semuaaa yang kau usahakan itu berhasil 
+                       baik YA SEMOGA AJA CITA2MU TERCAPAI LAAA nikmati aja prosesnya ❤️ disclaimer 
+                       ini websitenya GW BUAT SENDIRI WITH CODINGAN WICIS GW EFFORT LOHYA 👩🏻‍🦯👩🏻‍🦯👩🏻‍🦯👩🏻‍🦯
                     </p>
-                    <p>
-                       semogaa di perkuliahan nanti kau dikelilingi orang2 baaiikk, semua yang baik 
-                       datang ke kau. semogaa di masa depan nanti kau bisa ngebahagiain orang tuamu 
-                       yaah duuulll. btw selamat ketemu org baik nan rendah hati ini ❤️
-                    </p>
+                   
                     <p style={{ textAlign: "right", marginBottom: "-4px" }}>sincerely,</p>
                     <p style={{ textAlign: "right", marginTop: 0 }}>bileelll terkeren terjago terhebat</p>
                 </div>
             </div>
 
             <div className="title">
-                <p>BACAA DEH PESAN SINGKAT AKU</p>
+                <p>BACAA PESAN SINGKAT GW LAINNYA</p>
             </div>
             <div className="img-btn">
                 <button className="img-button" onClick={() => openPopup("img/1.png")}>
-                    <img src="img/4.png" alt="letter" className="img-small"/>
-                    <span className="btn-text">di masa depan..</span>
+                    <img src="img/5.png" alt="letter" className="img-small"/>
+                    <span className="btn-text">hmmm</span>
                 </button>
                 <button className="img-button" onClick={() => openPopup("img/2.png")}>
-                    <img src="img/5.png" alt="letter" className="img-small"/>
-                    <span className="btn-text">harapan aku!!</span>
+                    <img src="img/6.png" alt="letter" className="img-small"/>
+                    <span className="btn-text">harapan gwe lahyak</span>
                 </button>
             </div>
 
             <div className="img-btn">
                 <button className="img-button" onClick={() => openPopup("img/3.png")}>
-                    <img src="img/6.png" alt="letter" className="img-small"/>
-                    <span className="btn-text">maakaasii bgttt</span>
-                </button>
-                <button className="img-button" onClick={() => openPopup("img/8.png")}>
                     <img src="img/7.png" alt="letter" className="img-small"/>
-                    <span className="btn-text">BARCOODEE</span>
+                    <span className="btn-text">maakaasi kata gwe</span>
+                </button>
+                <button className="img-button" onClick={() => openPopup("img/4.png")}>
+                    <img src="img/8.png" alt="letter" className="img-small"/>
+                    <span className="btn-text">GATAU</span>
                 </button>
             </div>
 
             <button className="btn" onClick={() => navigate("/")}>
-                segitu dulu deh!
+                    YAUDA SEGITU AJA
             </button>
 
             {popupImage && (
